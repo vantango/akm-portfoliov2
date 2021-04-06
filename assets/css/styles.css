@@ -1,5 +1,43 @@
 body {
     background-image: linear-gradient(to bottom right, rgb(61, 145, 160), rgb(214, 133, 57));
+    font-family: 'Prata', serif;
+}
+
+#intro {
+    
+}
+
+#aboutTitle {
+    animation-duration: 2s;
+    animation-name: aboutMe;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+#technologies {
+    animation-duration: 2s;
+    animation-name: technologies;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+#projects {
+    animation-duration: 2s;
+    animation-name: projects;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+}
+
+#questions {
+    animation-duration: 2s;
+    animation-name: questions;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+}
+
+#aboutMe {
+    margin-left: 20%;
+    margin-right: 20%;
 }
 
 #profilePic {
@@ -29,4 +67,28 @@ body {
 
 .navbar {
     background-color:rgb(255, 255, 255);
+}
+
+@keyframes aboutMe {
+    0% {
+      margin-left: -100%;
+    }
+}
+
+@keyframes technologies {
+    0% {
+      margin-left: 100%;
+    }
+}
+
+@keyframes projects {
+    0% {
+      margin-left: 50%;
+    }
+}
+
+@keyframes questions {
+    0% {
+      margin-left: -100%;
+    }
 }
