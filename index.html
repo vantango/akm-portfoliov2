@@ -29,7 +29,7 @@
             </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-menu">
             <div class="navbar-start">
 
                 <div class="navbar-dropdown">
@@ -48,30 +48,28 @@
 
         <div class="navbar-end">
             <div class="navbar-item">
-                <div class="buttons">
-                    <button>About</button>
-                    <button href="https://github.com/vantango" target="_blank">Projects</button>
-                    <button href="https://www.linkedin.com/in/aleksandr-kimball-moreno" target="_blank">Contact</button>
+                <div class="navbar-buttons">
+                    <a class="navButtons" target="_blank">About</a>
+                    <a class="navButtons" target="_blank">Projects</a>
+                    <a class="navButtons" target="_blank">Contact</a>
 
                 </div>
             </div>
-        </div>
         </div>
     </nav>
 
     <div class="container">
         <div class="content" id=mainLanding>
-            <div class="column is-8 is-offset-4">
-                <!-- <div class="box"> -->
+            <div class="column is-12" id=>
                 <h1 id="intro">Hello there<br>
                     My name is Aleks<br>
                     And I'm a web developer!</h1>
-                <!-- </div> -->
+                <img id="profilePic" src="assets/images/IMG_20190926_045703_968.jpg" alt="profile-picture">
             </div>
         </div>
 
 
-        <img id="profilePic" src="assets/images/IMG_20190926_045703_968.jpg" alt="profile-picture">
+
 
 
         <div class="content">
@@ -80,11 +78,13 @@
                 <hr>
             </div>
 
-            <p id="aboutMe"> I am a full-stack Junior Web Developer with a focus on frontend technologies and recent graduate
+            <p id="aboutMe"> I am a full-stack junior web developer with a focus on frontend technologies and recent
+                graduate
                 of the Web Development Boot Camp at the University of Washington.
                 Combining my background in the automotive industry with newfound skills in
                 web development, I am passionate about creating innovative and engaging MERN-stack applications
-                that provide a high-quality user experience with lightweight, efficient, and agile functionality.</p>
+                that provide a high-quality user experience with lightweight, efficient, and agile functionality.
+            </p>
         </div>
 
         <div class="content">
@@ -124,8 +124,8 @@
         <div class="content">
             <div class="column is-4 is-offset-4">
                 <h2 id="projects">Projects & Collaborations</h2>
-                <hr>
             </div>
+            <hr>
         </div>
         <div class="columns">
             <div class="column">
@@ -254,32 +254,24 @@
         </div>
 
 
-        <div class="content">
+        <div class="content" id="links">
             <div class="column is-3">
                 <h2 id="questions">Questions? Want to get in touch?</h2>
-                <hr>
             </div>
+            <hr>
 
             <div class="columns">
-                <div class="column is-offset-2">
-                    <button>
-                        Email
-                    </button>
+                <div class="column is-3">
+                    <img type="image" class="linkButtons" id="email" src="assets/images/email.png">
                 </div>
-                <div class="column">
-                    <button>
-                        GitHub
-                    </button>
+                <div class="column is-3">
+                    <img type="image" class="linkButtons" id="github" src="assets/images/github.png">
                 </div>
-                <div class="column">
-                    <button>
-                        LinkedIn
-                    </button>
+                <div class="column is-3">
+                    <img type="image" class="linkButtons" id="linkedin" src="assets/images/linkedin.png">
                 </div>
-                <div class="column">
-                    <button>
-                        CV
-                    </button>
+                <div class="column is-3">
+                    <img type="image" class="linkButtons" id="cv" src="assets/images/cv.png">
                 </div>
             </div>
         </div>
