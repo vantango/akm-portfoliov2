@@ -1,10 +1,14 @@
 body {
-    background-image: linear-gradient(to bottom right, rgb(61, 145, 160), rgb(214, 133, 57));
+    background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(214, 133, 57));
     font-family: 'Prata', serif;
 }
 
 p {
-    color: black;
+    color: rgb(216, 211, 211);
+}
+
+hr {
+    background-color: rgb(214, 133, 57);
 }
 
 .content {
@@ -12,8 +16,15 @@ p {
 }
 
 .container {
-    padding-left: 12%;
-    padding-right: 12%;
+    padding-top: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-image: linear-gradient(rgb(88, 87, 86), rgb(103, 163, 173));
+}
+
+.title {
+    padding-top: 20px;
+    padding-left: 7px;
 }
 
 h2 {
@@ -23,12 +34,15 @@ h2 {
 
 #profilePic {
     box-shadow: 5px 10px 20px;
+    width: auto;
+    height: auto;
 }
 
 #intro {
     margin-top: 4%;
     margin-left: 30%;
     margin-right: 30%;
+    color: rgb(216, 211, 211);
 }
 
 #aboutTitle {
@@ -37,6 +51,7 @@ h2 {
     animation-iteration-count: 1;
     animation-direction: normal;
     width: 120%;
+    color: rgb(216, 211, 211);
 }
 
 #technologies {
@@ -45,6 +60,7 @@ h2 {
     animation-iteration-count: 1;
     animation-direction: normal;
     width: 120%;
+    color: rgb(216, 211, 211);
 }
 
 #projects {
@@ -52,19 +68,26 @@ h2 {
     animation-name: projects;
     animation-iteration-count: 1;
     animation-direction: inherit;
+    color: rgb(216, 211, 211);
 }
 
 #questions {
+    padding-top: 15%;
     animation-duration: 2s;
     animation-name: questions;
     animation-iteration-count: 1;
     animation-direction: inherit;
+    color: rgb(216, 211, 211);
 }
 
 #aboutMe {
     margin-left: 16%;
     margin-right: 16%;
 }
+
+ #projectsTitle {
+     padding-bottom: 1%;
+ }
 
 #profilePic {
     display: block;
@@ -114,6 +137,16 @@ h2 {
     box-shadow: 5px 10px 20px;
 }
 
+.image {
+    width: 1640;
+    height: 180px;
+    box-shadow: 5px 10px 20px;
+}
+
+.image:hover {
+    opacity: 0.7; 
+}
+
 .linkButtons {
     padding-top: 10%;
     padding-right: 10%;
@@ -130,7 +163,48 @@ h2 {
 }
 
 #email {
-    background: url("assets/images/email.png")
+    padding-top: 16%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#github {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#linkedin {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#cv {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#email:hover {
+    opacity: 0.5; 
+}
+
+#github:hover {
+    opacity: 0.5; 
+}
+
+#linkedin:hover {
+    opacity: 0.5; 
+}
+
+#cv:hover {
+    opacity: 0.5; 
 }
 
 @keyframes aboutMe {
