@@ -20,6 +20,7 @@ hr {
     padding-left: 10%;
     padding-right: 10%;
     background-image: linear-gradient(rgb(88, 87, 86), rgb(103, 163, 173));
+    box-shadow: 5px 10px 20px;
 }
 
 .title {
@@ -118,6 +119,7 @@ h2 {
 .navbar {
     background-color:rgb(255, 255, 255);
     max-width: auto;
+    box-shadow: 5px 10px 20px;
 }
 
 .navbar-buttons {
