@@ -46,44 +46,7 @@ h2 {
     margin-left: 30%;
     margin-right: 30%;
     color: rgb(216, 211, 211);
-    text-align: center;
-}
-
-#aboutTitle {
-    animation-duration: 2s;
-    animation-name: aboutMe;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    width: 100%;
-    color: rgb(216, 211, 211);
-}
-
-#technologies {
-    animation-duration: 2s;
-    animation-name: technologies;
-    animation-iteration-count: 1;
-    animation-direction: normal;
-    width: 100%;
-    color: rgb(216, 211, 211);
-    text-align: right;
-}
-
-#projects {
-    animation-duration: 2s;
-    animation-name: projects;
-    animation-iteration-count: 1;
-    animation-direction: inherit;
-    color: rgb(216, 211, 211);
-    text-align: center;
-}
-
-#questions {
-    padding-top: 15%;
-    animation-duration: 2s;
-    animation-name: questions;
-    animation-iteration-count: 1;
-    animation-direction: inherit;
-    color: rgb(216, 211, 211);
+    text-align: left;
 }
 
 #aboutMe {
@@ -131,6 +94,10 @@ h2 {
 
 .navbar-buttons {
     display: inline-block;
+}
+
+.navbar-start {
+    align-items: center;
 }
 
 .card-content {
@@ -227,6 +194,44 @@ h2 {
     opacity: 0.5; 
 }
 
+/* SECTION ANIMATIONS */
+#aboutTitle {
+    animation-duration: 2s;
+    animation-name: aboutMe;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    width: 100%;
+    color: rgb(216, 211, 211);
+}
+
+#technologies {
+    animation-duration: 2s;
+    animation-name: technologies;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    width: 100%;
+    color: rgb(216, 211, 211);
+    text-align: right;
+}
+
+#projects {
+    animation-duration: 2s;
+    animation-name: projects;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+    color: rgb(216, 211, 211);
+    text-align: center;
+}
+
+#questions {
+    padding-top: 15%;
+    animation-duration: 2s;
+    animation-name: questions;
+    animation-iteration-count: 1;
+    animation-direction: inherit;
+    color: rgb(216, 211, 211);
+}
+
 @keyframes aboutMe {
     0% {
       margin-left: -100%;
@@ -251,6 +256,41 @@ h2 {
     }
 }
 
+
+
+/* INTRO ANIMATION */
+.animation-box {
+    width: 100%;
+    height: fit-content;
+    width: fit-content;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+  }
+
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .intro-text {
+    font-size: 30px;
+    position: relative;
+    opacity: 1;
+    animation-name: fadeIn;
+    animation-delay: 0s;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+  }
+
+
+
+  /* MOBILE RESPONSIVENESS */
 @media only screen and (max-width: 840px) {
     body {
         width: 100%;
