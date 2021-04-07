@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+  }
+
 body {
     background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0));
     font-family: 'Prata', serif;
@@ -13,7 +17,7 @@ hr {
 }
 
 .content {
-    padding-bottom: 15%;
+    padding-bottom: 5%;
 }
 
 .container {
@@ -59,6 +63,7 @@ h2 {
 
  #projectsTitle {
      padding-bottom: 1%;
+     margin-bottom: 0px;
  }
 
 #profilePic {
@@ -90,6 +95,7 @@ h2 {
 .navbar {
     background-color:rgb(255, 255, 255);
     box-shadow: 5px 10px 20px;
+    width: 100%;
 }
 
 .navbar-buttons {
@@ -97,12 +103,12 @@ h2 {
 }
 
 .navbar-start {
-    align-items: center;
+    margin-right: 0%;
 }
 
 .card-content {
     height: fit-content;
-    min-height: 240px;
+    min-height: 260px;
 }
 
 .card {
@@ -119,6 +125,12 @@ h2 {
     opacity: 0.7; 
 }
 
+.techTitle {
+    text-align: center;
+    font-size: large;
+    font-weight: bold;
+}
+
 .footer {
     padding-bottom: 2px;
     padding-top: 4px;
@@ -132,6 +144,28 @@ h2 {
 #copyright {
     padding-top: 10px;
 }
+
+#myBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: solid; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: rgb(187, 184, 184); /* Set a background color */
+    color: black; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 20%; /* Rounded corners */
+    box-shadow: 5px 10px 20px;
+    font-size: 18px; /* Increase font size */
+    font-family: 'Prata', serif;;
+  }
+  
+  #myBtn:hover {
+    opacity: 0.5; /* Add a dark-grey background on hover */
+  }
 
 .linkButtons {
     padding-top: 10%;
@@ -221,6 +255,7 @@ h2 {
     animation-direction: inherit;
     color: rgb(216, 211, 211);
     text-align: center;
+    margin-bottom: 0px;
 }
 
 #questions {
@@ -291,7 +326,22 @@ h2 {
 
 
   /* MOBILE RESPONSIVENESS */
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1030px) {
+    .card-content {
+        min-height: 290px;
+    }
+    .container {
+        width: 75vw;
+    }
+    #aboutMe {
+        margin: 0%;
+    }
+    .linkButtons {
+        padding-left: 0%;
+        padding-right: 0%;
+    }
+
+@media only screen and (max-width: 800px) {
     body {
         width: 100%;
     }
@@ -328,10 +378,11 @@ h2 {
     }
 }
 
-@media only screen and (max-width: 360px) {
+@media only screen and (max-width: 380px) {
     .container {
         padding-left: 10%;
         padding-right: 10%;
+        width: 100%;
     }
     #navbarName {
         width: 70vw;
@@ -342,5 +393,8 @@ h2 {
     .cards {
         padding-left: 0%;
         padding-right: 0%;
+    }
+    p {
+        width: 77vw;
     }
 }
