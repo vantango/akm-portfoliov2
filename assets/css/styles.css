@@ -1,6 +1,7 @@
 body {
-    background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(214, 133, 57));
+    background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0));
     font-family: 'Prata', serif;
+    width: 100%;
 }
 
 p {
@@ -33,10 +34,11 @@ h2 {
     width: 100%;
 }
 
-#profilePic {
-    box-shadow: 5px 10px 20px;
-    width: auto;
-    height: auto;
+.tech {
+    text-align: center;
+    padding: 10px;
+    box-shadow: 5px 10px 20px black;
+    background-color: rgb(88, 87, 86);
 }
 
 #intro {
@@ -44,6 +46,7 @@ h2 {
     margin-left: 30%;
     margin-right: 30%;
     color: rgb(216, 211, 211);
+    text-align: center;
 }
 
 #aboutTitle {
@@ -51,7 +54,7 @@ h2 {
     animation-name: aboutMe;
     animation-iteration-count: 1;
     animation-direction: normal;
-    width: 120%;
+    width: 100%;
     color: rgb(216, 211, 211);
 }
 
@@ -60,8 +63,9 @@ h2 {
     animation-name: technologies;
     animation-iteration-count: 1;
     animation-direction: normal;
-    width: 120%;
+    width: 100%;
     color: rgb(216, 211, 211);
+    text-align: right;
 }
 
 #projects {
@@ -70,6 +74,7 @@ h2 {
     animation-iteration-count: 1;
     animation-direction: inherit;
     color: rgb(216, 211, 211);
+    text-align: center;
 }
 
 #questions {
@@ -82,8 +87,11 @@ h2 {
 }
 
 #aboutMe {
-    margin-left: 16%;
-    margin-right: 16%;
+    margin-left: 14%;
+    margin-right: 14%;
+    box-shadow: 5px 10px 20px black;
+    padding: 20px;
+    background-color: rgb(88, 87, 86);
 }
 
  #projectsTitle {
@@ -94,9 +102,10 @@ h2 {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    height: 30%;
-    width: 30%;
+    height: 50%;
+    width: 50%;
     border-radius: 50%;
+    box-shadow: 5px 10px 20px;
 }
 
 #mainLanding {
@@ -113,12 +122,10 @@ h2 {
 #navbarName {
     font-family: 'Cinzel Decorative', cursive;
     font-size: large;
-    margin-left: 5%;
 }
 
 .navbar {
     background-color:rgb(255, 255, 255);
-    max-width: auto;
     box-shadow: 5px 10px 20px;
 }
 
@@ -126,17 +133,13 @@ h2 {
     display: inline-block;
 }
 
-.navButtons {
-    margin-left: 5%;
-    margin-right: 5%;
-}
-
-#navbarMiddle {
-    width: 50%;
+.card-content {
+    height: fit-content;
+    min-height: 240px;
 }
 
 .card {
-    box-shadow: 5px 10px 20px;
+    box-shadow: 5px 10px 30px;
 }
 
 .image {
@@ -149,6 +152,20 @@ h2 {
     opacity: 0.7; 
 }
 
+.footer {
+    padding-bottom: 2px;
+    padding-top: 4px;
+}
+
+#footer {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+#copyright {
+    padding-top: 10px;
+}
+
 .linkButtons {
     padding-top: 10%;
     padding-right: 10%;
@@ -158,6 +175,7 @@ h2 {
     justify-content: center;
     align-items: center;
     color: black;
+    background-color: transparent;
 }
 
 #links {
@@ -230,5 +248,59 @@ h2 {
 @keyframes questions {
     0% {
       margin-left: -100%;
+    }
+}
+
+@media only screen and (max-width: 840px) {
+    body {
+        width: 100%;
+    }
+    .container {
+        width: 80vw;
+    }
+    .card {
+        display: flexbox;
+        align-items: center;
+        height: fit-content;
+    }
+    .card-content {
+        height: fit-content;
+    }
+    .title {
+        text-align: center;
+    }
+    #profilePic {
+        height: 80%;
+        width: 80%;
+    }
+    #aboutMe {
+        margin:0%;
+    }
+    #intro {
+        margin: auto;
+        padding-top: 10%;
+    }
+    .tech {
+        display: flexbox;
+    }
+    .linkButtons {
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .container {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    #navbarName {
+        width: 70vw;
+    }
+    #aboutMe {
+        margin:0%;
+    }
+    .cards {
+        padding-left: 0%;
+        padding-right: 0%;
     }
 }

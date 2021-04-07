@@ -11,7 +11,6 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Prata&display=swap"
         rel="stylesheet">
-    <link rel="index.js" href="assets/js/index.js">
 </head>
 
 <body>
@@ -30,32 +29,20 @@
             </a>
         </div>
 
-        <div class="navbar-menu">
+        <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-
-                <div class="navbar-dropdown">
-                    <a class="navbar-item">
-                        About
-                    </a>
-                    <a class="navbar-item">
-                        Projects
-                    </a>
-                    <a class="navbar-item">
-                        Contact
-                    </a>
-                </div>
+                <a class="navbar-item">
+                    About
+                </a>
+                <a class="navbar-item">
+                    Projects
+                </a>
+                <a class="navbar-item">
+                    Contact
+                </a>
             </div>
-        </div>
-
-        <div class="navbar-end">
-            <div class="navbar-item">
-                <div class="navbar-buttons">
-                    <a class="navButtons" target="_blank">About</a>
-                    <a class="navButtons" target="_blank">Projects</a>
-                    <a class="navButtons" target="_blank">Contact</a>
-
-                </div>
-            </div>
+            <!-- <div class="navbar-end">
+            </div> -->
         </div>
     </nav>
 
@@ -77,46 +64,52 @@
 
         <div class="content">
             <div class="column is-4">
-                <h2 id="aboutTitle">A little bit about me</h2>
-                <hr>
+                <h2 id="aboutTitle">A little bit about me
+                    <hr>
+                </h2>
             </div>
-
-            <p id="aboutMe"> I am a full-stack junior web developer with a focus on frontend technologies and recent
+            <p id="aboutMe">
+                I am a full-stack junior web developer with a focus on frontend technologies as well as a recent
                 graduate
-                of the Web Development Boot Camp at the University of Washington.
+                of the Web Development Boot Camp at the University of Washington.<br><br>
                 Combining my background in the automotive industry with newfound skills in
-                web development, I am passionate about creating innovative and engaging MERN-stack applications
+                web development, I am passionate about creating innovative and engaging web applications
                 that provide a high-quality user experience with lightweight, efficient, and agile functionality.
             </p>
         </div>
 
         <div class="content">
-            <div class="column is-4 is-offset-9">
-                <h2 id="technologies">Technologies & Tools</h2>
-                <hr>
+            <div class="column is-4 is-offset-8">
+                <h2 id="technologies">Technologies & Tools
+                    <hr>
+                </h2>
+
             </div>
             <div class="columns">
-                <div class="column is-3 is-offset-1">
-                    <p>JavaScript<br>
+                <div class="column is-3" id=tech1">
+                    <p class="tech">
+                        JavaScript<br>
                         jQuery<br>
                         AJAX
                     </p>
                 </div>
-                <div class="column is-3">
-                    <p>
+                <div class="column is-3" id=tech2">
+                    <p class="tech">
                         React.js<br>
                         HTML5<br>
                         CSS3
                     </p>
                 </div>
-                <div class="column is-3">
-                    <p> Node.js<br>
+                <div class="column is-3" id=tech3">
+                    <p class="tech">
+                        Node.js<br>
                         MySQL<br>
                         Sequelize
                     </p>
                 </div>
-                <div class="column">
-                    <p>Express.js<br>
+                <div class="column is-3" id=tech4">
+                    <p class="tech">
+                        Express.js<br>
                         MongoDB<br>
                         Mongoose
                     </p>
@@ -125,13 +118,14 @@
         </div>
 
         <div class="content" id="projectsTitle">
-            <div class="column is-6 is-offset-4">
-                <h2 id="projects">Projects & Collaborations</h2>
+            <div class="column is-12">
+                <h2 id="projects">Projects & Collaborations
+                    <hr>
+                </h2>
             </div>
-            <hr>
         </div>
         <div class="columns">
-            <div class="column">
+            <div class="column is-6 cards">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-5by3">
@@ -145,14 +139,16 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.
+                            A MERN-stack dungeon-crawler RPG built using React.js and Redux, designed to teach basic
+                            coding
+                            concepts and provide practice for algorithm challenges to new developers seeking a fun and
+                            interactive way to implement their skills.
                             <br>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column is-6 cards">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-5by3">
@@ -166,14 +162,17 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.
+                            A full-stack web application that allows users to make a profile for each one of their
+                            plants to show off their personalities, keep track of watering, and upload user photos to
+                            keep records of their growth.
                             <br>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column">
+        </div>
+        <div class="columns">
+            <div class="column is-6 cards">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-5by3">
@@ -187,17 +186,16 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.
+                            Allows a user to search for any national park for a given visitation date in the US. It not
+                            only displays general information and a brief summary for each park, but also presents the
+                            user with a star chart of what the night sky will look like at that park on a specific date,
+                            and general weather information provided by the National Parks Service.
                             <br>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <div class="columns">
-            <div class="column">
+            <div class="column is-6 cards">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-5by3">
@@ -211,14 +209,18 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.
+                            A React app that uses Axios to make API calls to the Random User Generator API. The user can
+                            search for an employee via first or last name (non-case sensitive). Employees can also be
+                            arranged in both ascending or descending order based on either their first or last name.
+                            These actions are performed via sort and filter functions.
                             <br>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column">
+        </div>
+        <div class="columns">
+            <div class="column is-6 cards">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-5by3">
@@ -232,14 +234,14 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.
+                            A full-stack web application that utilizes MySQL, Node, Express, and ORM to add, devour, and
+                            reorder any burger you like!
                             <br>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="column">
+            <div class="column is-6 cards">
                 <div class="card">
                     <div class="card-image">
                         <figure class="image is-5by3">
@@ -253,8 +255,10 @@
                     </div>
                     <div class="card-content">
                         <div class="content">
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                            Phasellus nec iaculis mauris.
+                            A weather dashboard that takes the user's city of choice into the input field. Once the user
+                            presses the search button or hits the enter key, the current weather data, including the
+                            temperature, humidity, wind speed, and UV index, and weather icon, is generated onto the
+                            main card.
                             <br>
                         </div>
                     </div>
@@ -264,10 +268,11 @@
 
 
         <div class="content" id="links">
-            <div class="column is-8">
-                <h2 id="questions">Questions? Want to get in touch?</h2>
+            <div class="column is-6">
+                <h2 id="questions">Questions? Want to get in touch?
+                    <hr>
+                </h2>
             </div>
-            <hr>
 
             <div class="columns">
                 <div class="column is-3">
@@ -286,8 +291,8 @@
                     </a>
                 </div>
                 <div class="column is-3">
-                    <a href="https://github.com/vantango/my-portfolio-v1/raw/main/Assets/Images/Resume FINALIZED (2-5-21).pdf
-                    " download" target="_blank">
+                    <a href="https://github.com/vantango/my-portfolio-v1/raw/main/Assets/Images/Resume FINALIZED (2-5-21).pdf"
+                        download" target="_blank">
                         <img type="image" class="linkButtons" id="cv" src="assets/images/cv.png">
                     </a>
                 </div>
@@ -297,7 +302,17 @@
 
     </div>
 
+    <footer class="footer">
+        <div class="content has-text-centered" id="footer">
+            <p id="copyright">
+                <strong>Copyright 2021</strong>
+            </p>
+        </div>
+    </footer>
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 
 </html>
