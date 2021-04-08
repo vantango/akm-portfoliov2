@@ -22,10 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
             });
         });
     }
-
 });
 
-// To The Top Button functionality
+// To-The-Top Button functionality
 
 //Get the button:
 mybutton = document.getElementById("myBtn");

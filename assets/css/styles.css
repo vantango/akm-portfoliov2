@@ -3,7 +3,10 @@ html {
   }
 
 body {
-    background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0));
+    background: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0));
+    background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0)), url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v393-tang-04-geometricpattern_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=7d8832ef61912b1e3f468f7d00a7304fhttps://i.pinimg.com/originals/26/90/bd/2690bdded68c2c19955a85132495416f.jpg");
+    background-repeat: no repeat ;
+    background-blend-mode: lighten;
     font-family: 'Prata', serif;
     width: 100%;
 }
@@ -14,6 +17,7 @@ p {
 
 hr {
     background-color: rgb(214, 133, 57);
+    margin-top: 10px;
 }
 
 .content {
@@ -146,25 +150,28 @@ h2 {
 }
 
 #myBtn {
-    display: none; /* Hidden by default */
-    position: fixed; /* Fixed/sticky position */
-    bottom: 20px; /* Place the button at the bottom of the page */
-    right: 30px; /* Place the button 30px from the right */
-    z-index: 99; /* Make sure it does not overlap */
-    border: solid; /* Remove borders */
-    outline: none; /* Remove outline */
-    background-color: rgb(187, 184, 184); /* Set a background color */
-    color: black; /* Text color */
-    cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
-    border-radius: 20%; /* Rounded corners */
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: rgb(187, 184, 184);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
     box-shadow: 5px 10px 20px;
-    font-size: 18px; /* Increase font size */
-    font-family: 'Prata', serif;;
   }
   
   #myBtn:hover {
-    opacity: 0.5; /* Add a dark-grey background on hover */
+    background-color: rgb(221, 218, 218);
+  }
+
+  #upArrow {
+      width: 20px;
+      height: 15px;
   }
 
 .linkButtons {
@@ -189,6 +196,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    opacity: 0.7;
 }
 
 #github {
@@ -196,6 +204,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    opacity: 0.7;
 }
 
 #linkedin {
@@ -203,6 +212,7 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    opacity: 0.7;
 }
 
 #cv {
@@ -210,22 +220,23 @@ h2 {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    opacity: 0.7;
 }
 
 #email:hover {
-    opacity: 0.5; 
+    opacity: 0.4; 
 }
 
 #github:hover {
-    opacity: 0.5; 
+    opacity: 0.4; 
 }
 
 #linkedin:hover {
-    opacity: 0.5; 
+    opacity: 0.4; 
 }
 
 #cv:hover {
-    opacity: 0.5; 
+    opacity: 0.4; 
 }
 
 /* SECTION ANIMATIONS */
@@ -236,6 +247,7 @@ h2 {
     animation-direction: normal;
     width: 100%;
     color: rgb(216, 211, 211);
+    text-shadow: 1px 1px 2px #363636;
 }
 
 #technologies {
@@ -246,6 +258,7 @@ h2 {
     width: 100%;
     color: rgb(216, 211, 211);
     text-align: right;
+    text-shadow: 1px 1px 2px #363636;
 }
 
 #projects {
@@ -256,6 +269,7 @@ h2 {
     color: rgb(216, 211, 211);
     text-align: center;
     margin-bottom: 0px;
+    text-shadow: 1px 1px 2px #363636;
 }
 
 #questions {
@@ -265,6 +279,7 @@ h2 {
     animation-iteration-count: 1;
     animation-direction: inherit;
     color: rgb(216, 211, 211);
+    text-shadow: 1px 1px 2px #363636;
 }
 
 @keyframes aboutMe {
@@ -321,6 +336,7 @@ h2 {
     animation-delay: 0s;
     animation-duration: 3s;
     animation-iteration-count: 1;
+    text-shadow: 2px 2px 4px #303030;
   }
 
 
@@ -340,6 +356,7 @@ h2 {
         padding-left: 0%;
         padding-right: 0%;
     }
+}
 
 @media only screen and (max-width: 800px) {
     body {
@@ -379,10 +396,13 @@ h2 {
 }
 
 @media only screen and (max-width: 380px) {
+    body {
+        /* padding-left: 10%;
+        padding-right: 10%; */
+    }
     .container {
         padding-left: 10%;
         padding-right: 10%;
-        width: 100%;
     }
     #navbarName {
         width: 70vw;
@@ -395,6 +415,15 @@ h2 {
         padding-right: 0%;
     }
     p {
-        width: 77vw;
+        width: 100%;
+    }
+    #upArrow {
+        width: 60%;
+        height: 40%;
+    }
+    #myBtn {
+        width: 30px;
+        height: 30px;
+        padding: 0%;
     }
 }
