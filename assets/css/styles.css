@@ -4,8 +4,8 @@ html {
 
 body {
     background: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0));
-    background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0)), url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/v393-tang-04-geometricpattern_2.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=7d8832ef61912b1e3f468f7d00a7304fhttps://i.pinimg.com/originals/26/90/bd/2690bdded68c2c19955a85132495416f.jpg");
-    background-repeat: no repeat ;
+    background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0)), url("https://i.ibb.co/MZRg73W/v393-tang-04-geometricpattern-2.jpg");
+    background-repeat: no repeat;
     background-blend-mode: lighten;
     font-family: 'Prata', serif;
     width: 100%;
@@ -76,8 +76,10 @@ h2 {
     margin-right: auto;
     height: 50%;
     width: 50%;
+    border: solid;
+    border-color: rgb(51, 50, 50);
     border-radius: 50%;
-    box-shadow: 5px 10px 20px;
+    box-shadow: 5px 15px 20px;
 }
 
 #mainLanding {
@@ -102,12 +104,13 @@ h2 {
     width: 100%;
 }
 
-.navbar-buttons {
-    display: inline-block;
+.navbar-start {
+    margin-right: 1%;
+    margin-left: auto;
 }
 
-.navbar-start {
-    margin-right: 0%;
+.navbarLinks:hover {
+    color: rgb(103, 163, 173);
 }
 
 .card-content {
@@ -131,7 +134,7 @@ h2 {
 
 .techTitle {
     text-align: center;
-    font-size: large;
+    font-size: x-large;
     font-weight: bold;
 }
 
@@ -344,7 +347,7 @@ h2 {
   /* MOBILE RESPONSIVENESS */
 @media only screen and (max-width: 1030px) {
     .card-content {
-        min-height: 290px;
+        min-height: 320px;
     }
     .container {
         width: 75vw;
@@ -425,5 +428,8 @@ h2 {
         width: 30px;
         height: 30px;
         padding: 0%;
+    }
+    hr {
+        margin-bottom: 0%;
     }
 }
