@@ -8,7 +8,7 @@ body {
     background-repeat: no repeat;
     background-blend-mode: lighten;
     font-family: 'Prata', serif;
-    width: 100%;
+    width: 100vw;
 }
 
 p {
@@ -40,6 +40,7 @@ hr {
 h2 {
     display: inline-block;
     width: 100%;
+    margin-top: 50px;
 }
 
 .tech {
@@ -76,10 +77,10 @@ h2 {
     margin-right: auto;
     height: 50%;
     width: 50%;
-    border: solid;
-    border-color: rgb(51, 50, 50);
+    border: 1px solid;
+    border-color: rgb(214, 133, 57);
     border-radius: 50%;
-    box-shadow: 5px 15px 20px;
+    box-shadow: 5px 10px 20px rgb(39, 38, 38);
 }
 
 #mainLanding {
@@ -101,11 +102,11 @@ h2 {
 .navbar {
     background-color:rgb(255, 255, 255);
     box-shadow: 5px 10px 20px;
-    width: 100%;
+    width: 100vw;
 }
 
 .navbar-start {
-    margin-right: 1%;
+    margin-right: 1.5%;
     margin-left: auto;
 }
 
@@ -244,6 +245,7 @@ h2 {
 
 /* SECTION ANIMATIONS */
 #aboutTitle {
+    animation: slideInLeft;
     animation-duration: 2s;
     animation-name: aboutMe;
     animation-iteration-count: 1;
@@ -277,37 +279,37 @@ h2 {
 
 #questions {
     padding-top: 15%;
-    animation-duration: 2s;
+    /* animation-duration: 2s;
     animation-name: questions;
     animation-iteration-count: 1;
-    animation-direction: inherit;
+    animation-direction: inherit; */
     color: rgb(216, 211, 211);
     text-shadow: 1px 1px 2px #363636;
 }
 
-@keyframes aboutMe {
+/* @keyframes aboutMe {
     0% {
       margin-left: -100%;
     }
-}
+} */
 
-@keyframes technologies {
+/* @keyframes technologies {
     0% {
       margin-left: 100%;
     }
-}
+} */
 
-@keyframes projects {
+/* @keyframes projects {
     0% {
       margin-left: 50%;
     }
-}
+} */
 
-@keyframes questions {
+/* @keyframes questions {
     0% {
       margin-left: -100%;
     }
-}
+} */
 
 
 
@@ -321,7 +323,7 @@ h2 {
     position: relative;
   }
 
-  @keyframes fadeIn {
+  /* @keyframes fadeIn {
     0% {
       opacity: 0;
     }
@@ -329,16 +331,16 @@ h2 {
     100% {
       opacity: 1;
     }
-  }
+  } */
 
   .intro-text {
     font-size: 30px;
     position: relative;
     opacity: 1;
-    animation-name: fadeIn;
+    /* animation-name: fadeIn;
     animation-delay: 0s;
     animation-duration: 3s;
-    animation-iteration-count: 1;
+    animation-iteration-count: 1; */
     text-shadow: 2px 2px 4px #303030;
   }
 
@@ -346,12 +348,23 @@ h2 {
 
   /* MOBILE RESPONSIVENESS */
 @media only screen and (max-width: 1030px) {
+    /* html {
+        min-width: fit-content;
+    } */
+    body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .card {
+        display: grid;
+        flex-direction: column;
+    }
     .card-content {
-        min-height: 320px;
+        margin: 0 auto;
     }
-    .container {
-        width: 75vw;
-    }
+    /* .container {
+        display: grid;
+    } */
     #aboutMe {
         margin: 0%;
     }
@@ -362,16 +375,18 @@ h2 {
 }
 
 @media only screen and (max-width: 800px) {
+    /* html {
+        min-width: fit-content;
+    } */
     body {
-        width: 100%;
+        width: 100vw;
+        overflow-x: hidden;
     }
     .container {
-        width: 80vw;
+        width: 80%;
     }
     .card {
         display: flexbox;
-        align-items: center;
-        height: fit-content;
     }
     .card-content {
         height: fit-content;
@@ -394,21 +409,31 @@ h2 {
         display: flexbox;
     }
     .linkButtons {
-        margin-left: 0%;
+        padding-top: 5%;
+    }
+    #email {
+        padding-top: 0%;
     }
 }
 
 @media only screen and (max-width: 380px) {
+    html {
+        min-width: fit-content;
+    }
     body {
-        /* padding-left: 10%;
-        padding-right: 10%; */
+        width: 100vw;
+        overflow-x: hidden;
+        margin-left: 0 auto;
+        margin-right: 0 auto;
     }
     .container {
-        padding-left: 10%;
-        padding-right: 10%;
+        width: 90%;
+    }
+    .navbar {
+        width: 100vw;
     }
     #navbarName {
-        width: 70vw;
+        width: 80vw;
     }
     #aboutMe {
         margin:0%;
@@ -431,5 +456,8 @@ h2 {
     }
     hr {
         margin-bottom: 0%;
+    }
+    h2 {
+        font-size: 70px;
     }
 }
