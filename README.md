@@ -5,7 +5,7 @@
 I rebuilt my portfolio website from the ground up using HTML, CSS (Bulma, AOS), and a little vanilla JavaScript!
 
 ## Deployment:
-https://vantango.github.io/akm-portfoliov2/
+www.alekskm.com
             
 ## Table of Contents
 - [Installation](#Installation)
