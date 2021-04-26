@@ -117,11 +117,15 @@ h2 {
 
 .card-content {
     height: fit-content;
-    min-height: 260px;
+    min-height: 230px;
 }
 
 .card {
     box-shadow: 5px 10px 30px;
+}
+
+.media-content {
+    text-align: center;
 }
 
 .image {

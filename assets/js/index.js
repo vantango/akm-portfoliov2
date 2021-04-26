@@ -45,3 +45,8 @@ function topFunction() {
     document.body.scrollTop = 0; // For Safari
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+for (let i = 0; i < array.length; i++) {
+    const element = array[i];
+    
+}
