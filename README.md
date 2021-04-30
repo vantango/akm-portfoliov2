@@ -2,24 +2,21 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Description: 
-I rebuilt my portfolio website from the ground up using HTML, CSS (Bulma, AOS), and a little vanilla JavaScript!
+I rebuilt my portfolio website from the ground up using HTML, CSS (Bulma), AOS, and a little vanilla JavaScript!
+
+## Tech Stack
+- HTML5/CSS3
+- JavaScript
+- Bulma.CSS
+- AOS
 
 ## Deployment:
 www.alekskm.com
             
 ## Table of Contents
-- [Installation](#Installation)
-- [Usage](#Usage)
 - [Licenses](#Licenses)
 - [Contributing](#Contributing)
-- [Test](#Test)
 - [Questions](#Questions)
-            
-### Installation: 
- N/A
-            
-### Usage: 
-For reference only.
             
 ### License:
 (https://opensource.org/licenses/MIT)
@@ -34,9 +31,6 @@ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLI
             
 ### Contributing:
 Aleksandr Kimball-Moreno
-            
-### Tests: 
-N/A
             
 ### Questions:
 Find me on GitHub at: https://github.com/vantango
