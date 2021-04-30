@@ -4,11 +4,10 @@
 ## Description: 
 I rebuilt my portfolio website from the ground up using HTML, CSS (Bulma), AOS, and a little vanilla JavaScript!
 
-## Tech Stack
-- HTML5/CSS3
-- JavaScript
-- Bulma.CSS
-- AOS
+![Screen shot 1](assets/images/portfolio1.png?raw=true "")
+![Screen shot 2](assets/images/portfolio2.png?raw=true "")
+![Screen shot 3](assets/images/portfolio3.png?raw=true "")
+![Screen shot 4](assets/images/portfolio4.png?raw=true "")
 
 ## Deployment:
 www.alekskm.com
