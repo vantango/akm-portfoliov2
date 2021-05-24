@@ -7,7 +7,7 @@ body {
     background-image: linear-gradient(to bottom right, rgb(103, 163, 173), rgb(255, 135, 0)), url("https://i.ibb.co/MZRg73W/v393-tang-04-geometricpattern-2.jpg");
     background-repeat: no repeat;
     background-blend-mode: lighten;
-    font-family: 'Prata', serif;
+    font-family: 'Quicksand', sans-serif;
     width: 100vw;
 }
 
@@ -34,6 +34,7 @@ hr {
 .title {
     padding-top: 20px;
     padding-left: 7px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h2 {
@@ -92,13 +93,18 @@ h2 {
 }
 
 #navbarName {
-    font-family: 'Cinzel Decorative', cursive;
+    font-family: 'Montserrat', sans-serif;
     font-size: large;
+    font-weight: bold;
 }
 
 .navbar {
     background-color:rgb(255, 255, 255);
     width: 100vw;
+}
+
+.navbar-item {
+    font-weight: bold;
 }
 
 .navbar-start {
