@@ -353,6 +353,10 @@ h2 {
     #email {
         padding-top: 0%;
     }
+    #bulma {
+        width: 25%;
+        height: 25%;
+    }
 }
 
 @media only screen and (max-width: 380px) {
@@ -398,6 +402,10 @@ h2 {
     }
     h2 {
         font-size: 70px;
+    }
+    #bulma {
+        width: 25%;
+        height: 25%;
     }
 }
 
