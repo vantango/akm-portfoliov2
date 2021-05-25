@@ -2,7 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ## Description: 
-I rebuilt my portfolio website from the ground up using JavaScript, HTML, CSS (Bulma), AOS.
+I rebuilt my portfolio website from the ground up using JavaScript, Bulma, and AOS.
 
 ## Table of Contents
 - [Deployment](#Deployment)
