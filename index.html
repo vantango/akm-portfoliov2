@@ -19,7 +19,8 @@
 
     <nav class="navbar" role="navigation" aria-label="main navigation">
         <div class="navbar-brand">
-            <a class="navbar-item" id="navbarName" onClick="window.location.reload()">
+            <a class="navbar-item" id="navbarName" href="../akm-portfoliov2/index.html"
+                onClick="window.location.reload()">
                 ALEKSANDR KIMBALL-MORENO
             </a>
 
@@ -34,16 +35,16 @@
 
         <div id="navbarBasicExample" class="navbar-menu">
             <div class="navbar-start">
-                <a class="navbar-item navbarLinks" href="#about">
+                <a class="navbar-item navbarLinks navHover" href="#about">
                     ABOUT
                 </a>
-                <a class="navbar-item navbarLinks" href="#technologies">
+                <a class="navbar-item navbarLinks navHover" href="#technologies">
                     TECHNOLOGIES
                 </a>
-                <a class="navbar-item navbarLinks" href="#projects">
+                <a class="navbar-item navbarLinks navHover" href="#projects">
                     PROJECTS
                 </a>
-                <a class="navbar-item navbarLinks" href="#contact">
+                <a class="navbar-item navbarLinks navHover" href="#contact">
                     CONTACT
                 </a>
             </div>
@@ -73,7 +74,7 @@
         </div>
 
         <div class="content">
-            <div class="column is-4">
+            <div class="column is-4" id="aboutContainer">
                 <h2 id="about" data-aos="fade-right" data-aos-duration="1500" data-aos-mirror="true">
                     A LITTLE ABOUT ME
                     <hr>
@@ -88,7 +89,7 @@
         </div>
 
         <div class="content">
-            <div class="column is-4 is-offset-8">
+            <div class="column is-4 is-offset-8" id="techContainer">
                 <h2 id="technologies" data-aos="fade-left" data-aos-duration="1500" data-aos-mirror="true">
                     STACK, TOOLS, & SKILLS
                     <hr>
@@ -144,7 +145,7 @@
         </div>
 
         <div class="content" id="projects">
-            <div class="column is-12">
+            <div class="column is-12" id="projectsContainer">
                 <h2 id="projects" data-aos="fade-down" data-aos-duration="1500" data-aos-mirror="true">
                     PROJECTS & COLLABORATIONS
                     <hr>
@@ -363,9 +364,12 @@
     <footer class="footer">
         <div class="content has-text-centered" id="footer">
             <p id="copyright">
-                <strong>&copy 2021 ALEKSANDR KIMBALL-MORENO </strong>
+                <strong>&copy 2021 <a id="nameLink" href="../akm-portfoliov2/index.html"
+                        onClick="window.location.reload()">ALEKSANDR KIMBALL-MORENO</a> </strong>
             </p>
-            <img id="bulma" src="assets/images/bulma.png" alt="made with bulma badge">
+            <a href="https://bulma.io/" target="_blank">
+                <img id="bulma" src="assets/images/bulma.png" alt="made with bulma badge">
+            </a>
         </div>
     </footer>
 

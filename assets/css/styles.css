@@ -41,6 +41,7 @@ h2 {
     display: inline-block;
     width: 100%;
     margin-top: 50px;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .tech {
@@ -52,6 +53,10 @@ h2 {
     margin: 0 auto;
 }
 
+#techContainer {
+    margin-top: 12%;
+}
+
 #intro {
     padding-top: 2%;
     margin-top: 4%;
@@ -59,6 +64,10 @@ h2 {
     margin-right: 0 auto;
     color: rgb(216, 211, 211);
     text-align: left;
+}
+
+#aboutContainer {
+    margin-top: 12%;
 }
 
 #aboutMe {
@@ -71,6 +80,10 @@ h2 {
 #projects {
     padding-bottom: 1%;
     margin-bottom: 0px;
+ }
+
+ #projectsContainer {
+     margin-top: 15%;
  }
 
 #profilePic {
@@ -100,6 +113,10 @@ h2 {
     font-weight: bold;
 }
 
+#navbarName:hover {
+    color: rgb(214, 133, 57);
+}
+
 .navbar {
     background-color:rgb(255, 255, 255);
     width: 100vw;
@@ -114,8 +131,8 @@ h2 {
     margin-left: auto;
 }
 
-.navbarLinks:hover {
-    color: rgb(103, 163, 173);
+.navHover:hover {
+    color: rgb(214, 133, 57) !important;
 }
 
 .card-content {
@@ -145,6 +162,14 @@ h2 {
 #footer {
     padding-bottom: 10px;
     padding-top: 10px;
+}
+
+#nameLink {
+    color: black;
+}
+
+#nameLink:hover {
+    color: rgb(214, 133, 57);
 }
 
 #copyright {
@@ -356,8 +381,11 @@ h2 {
         padding-top: 0%;
     }
     #bulma {
-        width: 25%;
-        height: 25%;
+        width: 30%;
+        height: 30%;
+    }
+    #projectsContainer {
+        margin-top: 30%;
     }
 }
 
